@@ -24,7 +24,45 @@ Find relevant tests for the functionality and behavior that correspond to what t
 Documentation is about the tests, what and how they validate, not about the tools you are using
 
 
-# Test Plan
-1. Verify xml schema vs given referenced xsd file.
-2. Verify specific test cases mentioned in the task.
-3. Verify that dataflow sends valid data
+## Test Plan
+- verify xml scheme vs given referenced xsd file.
+- verify specific test cases mentioned in the task.
+
+### Out of scope
+- full test coverage
+- corner cases in specified use-cases
+- reporting (can be done on-top of it via e.g. Allure without changes)
+
+### Setup and run instruction:
+Here and below: console snippets are relevant for debian-based system
+1. Install latest Python3 version with pip
+```console
+sudo apt install python3.8
+```
+2. Install pipenv. Depending on your envvars and previous Python2 installations:
+```console
+pip install pipenv
+```
+or
+```console
+pip3 install pipenv
+```
+3. Clone/unpack this project and enter project root
+```console
+cd tt_polytech_ecb_api
+```
+4. Create virtual environment
+```console
+pipenv shell
+pipenv install
+```
+5. Run tests
+```console
+pytest
+```
+or
+```console
+python3 -m pytest
+```
+Optionally you can use all applicable pytest options by your choice:
+https://docs.pytest.org/en/6.2.x/usage.html
