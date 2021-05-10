@@ -1,0 +1,14 @@
+---
+ECB_HOST:
+  prod:
+    url: 'https://sdw-wsrest.ecb.europa.eu/service'
+    services:
+      data:
+        name: data
+        currency exchange flow:
+          - ECB
+          - EXR
+      schemas:
+        - schema
+        - datastructure
+        - ECB
