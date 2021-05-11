@@ -28,13 +28,37 @@ Documentation is about the tests, what and how they validate, not about the tool
 - verify xml scheme vs given referenced xsd file.
 - verify specific test cases mentioned in the task.
 
+### Details on tests:
+#### test_response_scheme_valid
+- Get the xml scheme using ECB API which provides schemas
+- Get some basic Currency Exchange response
+- Validate response vs xml scheme
+For more info see comments to this test
+
+#### test_currency_exchange_stats
+- Call Currency Exchange API using parametrized test data
+- Evaluate response vs expected data
+
+#### test_http_routing
+- Call Currency Exchange API using http scheme/protocol and allow_redirects=False
+- Evaluate that response code == 304 and Location header pointing into correct place
+
+#### test_if_modified_since_header
+- Call Currency Exchange API using
+- parse time and date of the response
+- increase response date by 1 second and feed this to 'If-Modified-Since' header
+- Evaluate that response code is 304
+For more info see comments to this test
+
 ### Out of scope
+- ISTQB-like specification of Test Cases in this document
+(summary, priority, precondition, Actions, Expected results... etc in order to keep file smaller)
 - full test coverage
 - corner cases in specified use-cases
 - reporting (can be done on-top of it via e.g. Allure without changes)
 
 ### Setup and run instruction:
-Here and below: console snippets are relevant for debian-based system
+Here and below: console snippets are relevant for latest Ubuntu versions
 1. Install latest Python3 version with pip
 ```console
 sudo apt update
