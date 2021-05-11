@@ -37,15 +37,21 @@ Documentation is about the tests, what and how they validate, not about the tool
 Here and below: console snippets are relevant for debian-based system
 1. Install latest Python3 version with pip
 ```console
-sudo apt install python3.8
+sudo apt update
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.9
+sudo apt install python3.9-distutils
 ```
-2. Install pipenv. Depending on your envvars and previous Python2 installations:
+2. Install pipenv. Depending on your envvars and previous Python2 and Python3 installations:
 ```console
-pip install pipenv
+pip3 install --upgrade pip
+pip3 install pipenv
 ```
 or
 ```console
-pip3 install pipenv
+python3.9 -m pip install --upgrade pip
+python3.9 -m pip install pipenv
 ```
 3. Clone/unpack this project and enter project root
 ```console
@@ -59,10 +65,6 @@ pipenv install
 5. Run tests
 ```console
 pytest
-```
-or
-```console
-python3 -m pytest
 ```
 Optionally you can use all applicable pytest options by your choice:
 https://docs.pytest.org/en/6.2.x/usage.html
