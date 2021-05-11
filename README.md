@@ -45,7 +45,7 @@ For more info see comments to this test
 
 #### test_if_modified_since_header
 - Call Currency Exchange API using
-- parse time and date of the response
+- parse time and date of the last update (header "Last-Modified")
 - increase response date by 1 second and feed this to 'If-Modified-Since' header
 - Evaluate that response code is 304
 For more info see comments to this test
