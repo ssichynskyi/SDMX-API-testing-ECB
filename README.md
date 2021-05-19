@@ -3,8 +3,8 @@
 ## Task
 
 ### Context
-The challenge is to create a testing plan for a Rest API. The one used for this challenge will be the European Central Bank (https://sdw-wsrest.
-ecb.europa.eu/help/ )
+The challenge is to create a testing plan for a Rest API. The one used for this challenge will be the European Central Bank
+(https://sdw-wsrest.ecb.europa.e/help/)
 You are expected to define tests for different functionalities, how to test them, and how to automate them.
 You can use any appropriate software. Please write the tests in the relevant language, and send them to us with instructions on how to run them
 (with documentation if any manual step is involved and how to evaluate the answers if not obvious from the result).
