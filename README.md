@@ -1,5 +1,5 @@
 # This was a testing task for testing ECB SDMX API
-It received a very good feedback from them and brought me to the next stage.
+It received a very good feedback from task originators and brought me to the next stage.
 
 ## Task
 Here's a task description as it was given:
