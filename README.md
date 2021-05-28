@@ -1,3 +1,4 @@
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c5a4f83a195e4a70b6eb0867d7966487)](https://www.codacy.com/gh/ssichynskyi/SDMX-API-testing-ECB/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ssichynskyi/SDMX-API-testing-ECB&amp;utm_campaign=Badge_Grade)
 # This was a testing task for testing ECB SDMX API
 It received a very good feedback from task originators and brought me to the next stage.
 
