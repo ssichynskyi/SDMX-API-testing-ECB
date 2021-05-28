@@ -15,8 +15,8 @@ You can use any appropriate software. Please write the tests in the relevant lan
 Please implement two tests to validate that the ECB Rest API works correctly. They should test basic functionality and behavior of the ECB Rest
 API (not all the functionalities and behavior but some important and relevant ones)
 Your tests should cover at least the following functionalities:
-- The key operator correctly implements the OR operator (e.g., retrieve the exchange rates against the euro for both the US dollar and the
-Japanese Yen)
+- The key operator correctly implements the OR operator
+  (e.g. retrieve the exchange rates against the euro for both the US dollar and the Japanese Yen)
 
 - Using the If-Modified-Since header with a date past the last update returns an HTTP 304 response code
 
@@ -27,34 +27,35 @@ You should spend about 2-4 hours working on the topic
 Find relevant tests for the functionality and behavior that correspond to what the Rest API aims to deliver
 Documentation is about the tests, what and how they validate, not about the tools you are using
 
-# Solution
-## Test Plan
+## Solution
+### Test Plan
 - verify xml scheme vs given referenced xsd file.
 - verify specific test cases mentioned in the task.
 
-### Details on tests:
-#### test_response_scheme_valid
+#### Details on tests
+##### test_response_scheme_valid
 - Get the xml scheme using ECB API which provides schemas
 - Get some basic Currency Exchange response
 - Validate response vs xml scheme
+
 For more info see comments to this test
 
-#### test_currency_exchange_stats
+##### test_currency_exchange_stats
 - Call Currency Exchange API using parametrized test data
 - Evaluate response vs expected data
 
-#### test_http_routing
+##### test_http_routing
 - Call Currency Exchange API using http scheme/protocol and allow_redirects=False
 - Evaluate that response code == 304 and Location header pointing into correct place
 
-#### test_if_modified_since_header
+##### test_if_modified_since_header
 - Call Currency Exchange API using
 - parse time and date of the last update (header "Last-Modified")
 - increase response date by 1 second and feed this to 'If-Modified-Since' header
 - Evaluate that response code is 304
 For more info see comments to this test
 
-### Out of scope
+#### Out of scope
 - ISTQB-like specification of Test Cases in this document (summary, priority, precondition, Actions, Expected results... etc in order to keep file smaller)
 
 - full test coverage

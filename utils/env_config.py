@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
+from pathlib import Path
 
-import re
-import os
 import yaml
 
-from pathlib import Path
 
 CONFIG_PATH = 'config'
 """path to config files folder from project root"""

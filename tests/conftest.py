@@ -1,7 +1,6 @@
-import logging
 import pytest
 
 
 @pytest.fixture(scope="package", autouse=True)
-def logger():
-    return logging.getLogger(__name__)
+def example():
+    """This is an example fixture to use across all tests"""

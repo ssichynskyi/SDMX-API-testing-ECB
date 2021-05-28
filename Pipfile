@@ -5,10 +5,10 @@ name = "pypi"
 
 [packages]
 requests = "*"
-lxml = "*"
 pyyaml = "*"
 pytest = "*"
 xmlschema = "*"
+defusedxml = "*"
 
 [dev-packages]
 

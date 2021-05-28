@@ -2,10 +2,9 @@ import datetime
 import pytest
 import requests
 
-from tests.conftest import logger
 from utils.api_caller import get_currency_exchange_rates
 from utils.api_resource_builder import CurrencyExchangeResource, SDMXSchemas
-from utils.sdmx_respond_parser import XMLParsingError, parse_sdmx_response, sdmx_resp_scheme_valid
+from utils.sdmx_respond_parser import parse_sdmx_response, sdmx_resp_scheme_valid
 
 
 TEST_DATA_AND_EXP_RESULT = [

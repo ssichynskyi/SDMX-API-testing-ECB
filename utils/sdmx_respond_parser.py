@@ -1,7 +1,8 @@
 import xmlschema
 
 from typing import Dict
-from xml.etree import ElementTree
+
+from defusedxml import ElementTree
 
 
 class XMLParsingError(Exception):
@@ -60,7 +61,7 @@ def parse_sdmx_response(xml_str: str) -> Dict:
                 observation_group = header.attrib['value']
 
         if not observation_group:
-            msg = f'No observation group found.'
+            msg = 'No observation group found.'
             raise XMLParsingError(msg)
         else:
             statistics[observation_group] = dict()
