@@ -1,1 +1,1 @@
-"""AUT tests dedicated for currency exchange API testing"""
+"""AUT tests dedicated for currency exchange API testing."""

@@ -1,1 +1,1 @@
-"""Package with AUT tests"""
+"""Package with AUT tests."""

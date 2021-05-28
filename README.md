@@ -64,7 +64,7 @@ For more info see comments to this test
 
 - reporting (can be done on-top of it via e.g. Allure without changes)
 
-### Setup and run instruction:
+### Setup and run instruction
 Here and below: console snippets are relevant for latest Ubuntu versions
 1. Install latest Python3 version with pip
 ```console
