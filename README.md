@@ -69,34 +69,35 @@ For more info see comments to this test
 Here and below: console snippets are relevant for latest Ubuntu versions
 1. Install latest Python3 version with pip
 ```console
-sudo apt update
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt update
-sudo apt install python3.9
-sudo apt install python3.9-distutils
+$sudo apt update
+$sudo add-apt-repository ppa:deadsnakes/ppa
+$sudo apt update
+$sudo apt install python3.9
+$sudo apt install python3.9-distutils
 ```
 2. Install pipenv. Depending on your envvars and previous Python2 and Python3 installations:
 ```console
-pip3 install --upgrade pip
-pip3 install pipenv
+$pip3 install --upgrade pip
+$pip3 install pipenv
 ```
 or
 ```console
-python3.9 -m pip install --upgrade pip
-python3.9 -m pip install pipenv
+$python3.9 -m pip install --upgrade pip
+$python3.9 -m pip install pipenv
 ```
 3. Clone/unpack this project and enter project root
 ```console
-cd tt_polytech_ecb_api
+$git clone https://github.com/ssichynskyi/SDMX-API-testing-ECB.git
+$cd SDMX-API-testing-ECB
 ```
 4. Create virtual environment
 ```console
-pipenv shell
-pipenv install
+$pipenv shell
+$pipenv install
 ```
 5. Run tests
 ```console
-pytest
+$pytest [optional args]
 ```
 Optionally you can use all applicable pytest options of your choice:
 https://docs.pytest.org/en/6.2.x/usage.html
